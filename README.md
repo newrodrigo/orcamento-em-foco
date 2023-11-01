@@ -3,23 +3,23 @@
 ```mermaid
 classDiagram
   class Expense {
-    - id: long
-    - provider: Provider
+    - id: Long
     - description: String
     - situation: Situation
-    - amount: double
-    - paymentDate: Date
+    - amount: Double
+    - paymentDate: LocalDate
     - category: Category
+    - provider: Provider
     - observation: String
   }
   class Provider {
-    - id: long
+    - id: Long
     - name: String
     - email: String
     - phone: String
   }
   class Category {
-    - id: long
+    - id: Long
     - description: String
   }
   class Situation {
