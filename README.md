@@ -28,6 +28,6 @@ classDiagram
     - COMPLETED
   }
 
-  Expense "1" *-- "1" Category
-  Expense "1" *-- "1" Provider
+  Expense "1" -- "1" Category
+  Expense "1" -- "1" Provider
 ```
