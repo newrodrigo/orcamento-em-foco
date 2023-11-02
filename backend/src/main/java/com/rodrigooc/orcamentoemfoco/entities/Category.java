@@ -1,14 +1,12 @@
 package com.rodrigooc.orcamentoemfoco.entities;
 
 import java.io.Serializable;
-import java.util.List;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -19,11 +17,7 @@ public class Category implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
 	private String description;
-
-	@OneToMany(mappedBy = "category")
-	private List<Expense> expenses;
 
 	public Category() {
 	}

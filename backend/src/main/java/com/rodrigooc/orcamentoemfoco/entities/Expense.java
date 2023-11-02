@@ -24,6 +24,7 @@ public class Expense implements Serializable {
 	private Long id;
 
 	private String description;
+
 	private Integer situation;
 	private Double amount;
 

@@ -26,7 +26,6 @@ public class Provider implements Serializable {
 	}
 
 	public Provider(Long id, String name, String email, String phone) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
